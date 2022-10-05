@@ -10,4 +10,4 @@
 # ./deploy-acs-with-argo.sh
 
 echo "Deploying ACS using ArgoCD..."
-./argo-app-runner.sh stackrox 'https://github.com/giofontana/argocd-ocp.git' 'acs/gitops' HEAD
+./argo-app-runner.sh stackrox 'https://github.com/mikes429/argocd-ocp.git' 'acs/gitops' HEAD
