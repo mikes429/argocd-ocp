@@ -25,14 +25,14 @@ metadata:
   name: $app_name
   namespace: openshift-gitops
 spec:
-  project: default
+  project: acs
   source:
     repoURL: "$git_repo"
     path: $git_path
     targetRevision: $git_rev
   destination:
     server: 'https://kubernetes.default.svc'
-    namespace: default
+    namespace: openshift-gitops
   syncPolicy:
     automated:
       prune: true
